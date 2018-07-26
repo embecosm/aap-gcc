@@ -9,6 +9,9 @@
 #elif defined (__riscv)
   /* On RISC-V division by zero does not trap.  */
 # define DO_TEST 0
+#elif defined (__AAP__)
+  /* On AAP division by zero does not trap.  */
+# define DO_TEST 0
 #elif defined (__SPU__)
   /* On SPU division by zero does not trap.  */
 # define DO_TEST 0

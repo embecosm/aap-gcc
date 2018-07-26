@@ -1,0 +1,5 @@
+2018-07-26  Edward Jones  <ed.jones@embecosm.com>
+
+	* gcc.c-torture/execute/20101011-1.c: Disable test on AAP,
+	which doesn't trap on divide by zero.
+
