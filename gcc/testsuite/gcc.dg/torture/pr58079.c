@@ -1,4 +1,5 @@
 /* { dg-options "-mlong-calls" { target mips*-*-* } } */
+/* { dg-require-effective-target builtin_prefetch } */
 
 typedef unsigned char u8;
 typedef unsigned short u16;

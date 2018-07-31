@@ -1,5 +1,23 @@
 2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
 
+	* gcc.c-torture/compile/20040824-1.c: Annotate test which
+	  requires __builtin_prefetch.
+	* gcc.c-torture/execute/builtin-prefetch-1.c: Likewise.
+	* gcc.c-torture/execute/builtin-prefetch-2.c: Likewise.
+	* gcc.c-torture/execute/builtin-prefetch-3.c: Likewise.
+	* gcc.c-torture/execute/builtin-prefetch-4.c: Likewise.
+	* gcc.c-torture/execute/builtin-prefetch-5.c: Likewise.
+	* gcc.c-torture/execute/builtin-prefetch-6.c: Likewise.
+	* gcc.dg/builtin-prefetch-1.c: Likewise.
+	* gcc.dg/pr55153.c: Likewise.
+	* gcc.dg/pr56117.c: Likewise.
+	* gcc.dg/torture/pr58079.c: Likewise.
+	* lib/target-supports.exp
+	  (require_effective_target_builtin_prefetch): Add check for
+	  the prefetch builtin.
+
+2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
+
 	* gcc.c-torture/compile/bcopy-1.c: Annotate test that requires
 	  __builtin_bcopy.
 	* gcc.c-torture/execute/builtins/memmove.c: Likewise.

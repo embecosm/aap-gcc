@@ -4,6 +4,7 @@
    have alignment requirements for prefetch addresses, so make sure the
    compiler takes care of that.  This fails if it aborts, anything else
    is OK.  */
+/* { dg-require-effective-target builtin_prefetch } */
 
 struct S {
   short a;

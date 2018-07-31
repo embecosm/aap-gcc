@@ -2,6 +2,7 @@
 
    Prefetch data using a variety of storage classes and address
    expressions.  */
+/* { dg-require-effective-target builtin_prefetch } */
 
 int glob_int_arr[100];
 int *glob_ptr_int = glob_int_arr;

@@ -1,6 +1,7 @@
 /* Test that __builtin_prefetch does no harm.
 
    Data prefetch should not fault if used with an invalid address.  */
+/* { dg-require-effective-target builtin_prefetch } */
 
 #include <limits.h>
 

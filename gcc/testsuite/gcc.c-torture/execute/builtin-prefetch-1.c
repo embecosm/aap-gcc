@@ -2,6 +2,7 @@
 
    Prefetch using all valid combinations of rw and locality values.
    These must be compile-time constants.  */
+/* { dg-require-effective-target builtin_prefetch } */
 
 #define NO_TEMPORAL_LOCALITY 0
 #define LOW_TEMPORAL_LOCALITY 1

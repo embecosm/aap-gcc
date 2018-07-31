@@ -8586,6 +8586,9 @@ proc check_effective_target_builtin_imaxabs {} {
 proc check_effective_target_builtin_bcopy {} {
     return [check_builtin_support bcopy "__builtin_bcopy ((void *) 0, (void *) 0, 0);"]
 }
+proc check_effective_target_builtin_prefetch {} {
+    return [check_builtin_support prefetch "__builtin_prefetch ((void *)0, 0, 0);"]
+}
 
 # Check whether the compiler has gcc internals. This is basically just a
 # check that the compiler is gcc and should be used for tests in otherwise

@@ -4,6 +4,7 @@
    evaluated if it has side effects, even if the target does not support
    data prefetch.  Check changes to pointers and to array indices that are
    either global variables or arguments.  */
+/* { dg-require-effective-target builtin_prefetch } */
 
 #define ARRSIZE 100
 

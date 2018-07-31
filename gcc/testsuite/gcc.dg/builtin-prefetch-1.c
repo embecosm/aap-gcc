@@ -5,6 +5,7 @@
 
 /* { dg-do run } */
 /* { dg-require-effective-target gcc_frontend } */
+/* { dg-require-effective-target builtin_prefetch } */
 
 extern void exit (int);
 
