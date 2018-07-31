@@ -776,13 +776,10 @@ proc check_effective_target_untyped_assembly {} {
 # Return 1 if alloca is supported, 0 otherwise.
 
 proc check_effective_target_alloca {} {
-    if { [istarget nvptx-*-*] } {
-	return [check_no_compiler_messages alloca assembly {
-	    void f (void*);
-	    void g (int n) { f (__builtin_alloca (n)); }
-	}]
-    }
-    return 1
+    return [check_no_compiler_messages alloca assembly {
+	void f (void*);
+	void g (int n) { f (__builtin_alloca (n)); }
+    }]
 }
 
 # Return 1 if thread local storage (TLS) is supported, 0 otherwise.

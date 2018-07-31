@@ -1,3 +1,8 @@
+2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
+
+	* lib/target-supports.exp (check_effective_target_alloca):
+	  Allow check to run for all targets.
+
 2018-07-26  Edward Jones  <ed.jones@embecosm.com>
 
 	* lib/prune.exp: Prune any warnings from clang's
