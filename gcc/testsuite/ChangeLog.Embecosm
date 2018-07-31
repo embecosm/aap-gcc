@@ -1,5 +1,10 @@
 2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
 
+	* lib/target-supports.exp
+	  (check_effective_target_builtin_puts): Fix unescaped quotes.
+
+2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
+
 	* gcc.c-torture/compile/20040824-1.c: Annotate test which
 	  requires __builtin_prefetch.
 	* gcc.c-torture/execute/builtin-prefetch-1.c: Likewise.
