@@ -81,6 +81,13 @@ proc prune_gcc_output { text } {
     # using clang.
     regsub -all "(^|\n)\[^\n\]*warning: comparison of constant\[^\n\]*with boolean expression is always true\[^\n\]*-Wtautological-constant-out-of-range-compare\[^\n\]*" $text "" text
 
+    # clang: ignore any output from -Wreturn-type
+    # TODO: It may be better to just pass -Wno-return-type to every compile when
+    # using clang.
+    regsub -all "(^|\n)\[^\n\]*error: non-void function '\[^\n\]*' should return a value\[^\n\]*-Wreturn-type\[^\n\]*" $text "" text
+    regsub -all "(^|\n)\[^\n\]*warning: control may reach end of non-void function\[^\n\]*-Wreturn-type\[^\n\]*" $text "" text
+    regsub -all "(^|\n)\[^\n\]*warning: control reaches end of non-void function\[^\n\]*-Wreturn-type\[^\n\]*" $text "" text
+
     # Call into multiline.exp to handle any multiline output directives.
     set text [handle-multiline-outputs $text]
 
