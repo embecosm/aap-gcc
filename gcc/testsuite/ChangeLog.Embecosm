@@ -1,3 +1,8 @@
+2018-08-01  Lewis Revill  <lewis.revill@embecosm.com>
+
+	* lib/target-supports.exp (various): Replace NULL with
+	  (void *) 0 for calls to check_builtin_support.
+
 2018-07-31  Lewis Revill  <lewis.revill@embecosm.com>
 
 	* lib/prune.exp: Ignore -Wreturn-type warnings.
