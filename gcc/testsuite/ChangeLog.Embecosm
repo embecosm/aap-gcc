@@ -1,5 +1,10 @@
 2018-08-01  Lewis Revill  <lewis.revill@embecosm.com>
 
+	* gcc.c-torture/execute/bcp-1.c: Fix typo in dg check.
+	* gcc.dg/attr-externally-visible-1.c: Likewise.
+
+2018-08-01  Lewis Revill  <lewis.revill@embecosm.com>
+
 	* lib/target-supports.exp (various): Replace NULL with
 	  (void *) 0 for calls to check_builtin_support.
 
